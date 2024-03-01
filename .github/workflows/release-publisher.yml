@@ -2,7 +2,7 @@ name: Release Publisher
 
 on:
   release:
-    types: [released]
+    types: [latest]
 
 jobs:
   create-pull-request:
