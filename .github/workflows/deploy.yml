@@ -3,14 +3,14 @@ name: 'Reusable Workflow: Deploy'
 on:
   workflow_call:
     inputs:
-      environment:
+      github-environment:
         required: true
         type: string
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.environment }}
+    environment: ${{ inputs.github-environment }}
     steps:
       - uses: actions/checkout@v4
 

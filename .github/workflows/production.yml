@@ -10,6 +10,6 @@ jobs:
 
   staging:
     needs: build
-    uses: ./.github/workflows/deploy-environment.yml
+    uses: ./.github/workflows/deploy.yml
     with:
       github-environment: Production
