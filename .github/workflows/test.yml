@@ -1,4 +1,4 @@
-name: 'Deployment: Test'
+name: 'Deployment: Test env'
 
 on:
   release:
